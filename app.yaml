@@ -1,0 +1,13 @@
+#Replace the application id below with yours
+application: twilio-alpha
+version: 1-0
+runtime: go
+api_version: go1
+handlers:
+- url: /.*
+  script: _go_app
+
+env_variables:
+  TWILIO_ACCOUNT_SID: AC098505c02bb36686294206913ff0dd08
+  TWILIO_AUTH_TOKEN: 00d93aafdeaad239190b343f66762147
+  TWILIO_NUMBER: 3098073024
