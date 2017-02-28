@@ -82,7 +82,7 @@ func receiveSMSHandler(w http.ResponseWriter, r *http.Request) {
 			Url, _ = url.Parse("http://api.wolframalpha.com/v2/result?")
 
 			parameters := url.Values{}
-			parameters.Add("appid", "A72QEU-YEQT65L37E")
+			parameters.Add("appid", "WA APP ID")
 			parameters.Add("i", string(body))
 			Url.RawQuery = parameters.Encode()
 
