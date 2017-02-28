@@ -33,8 +33,8 @@ func main() {
 }
 
 var (
-	twilioClient = twirest.NewClient("AC098505c02bb36686294206913ff0dd08", "00d93aafdeaad239190b343f66762147")
-	twilioNumber = "3098073024"
+	twilioClient = twirest.NewClient("ACCOUNT-SID", "AUTH-TOKEN")
+	twilioNumber = "TWILIO-NUMBER"
 )
 
 func mustGetenv(k string) string {
