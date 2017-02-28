@@ -47,7 +47,7 @@ func mustGetenv(k string) string {
 
 func receiveCallHandler(w http.ResponseWriter, r *http.Request) {
 	resp := twiml.NewResponse()
-	resp.Action(twiml.Say{Text: "Hello from App Engine!"})
+	resp.Action(twiml.Say{Text: "Wolfram Alpha is the world's most advanced computational knowledge engine, but I can't receive voice queries yet. Send me a text message instead."})
 	resp.Send(w)
 }
 
